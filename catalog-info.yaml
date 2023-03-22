@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "westport"
+  description: "oh hi"
+  annotations:
+    github.com/project-slug: hattondev/westport
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/kubernetes-id: "westport"
+  links:
+    - url: https://westport.apps.wwtlab.net
+      title: Website
+      icon: Website
+    - url: https://app.harness.io/ng/#/account/KDANFuIkSvK5VMJ5Stni7g/cd/orgs/default/projects/PS_10015914/gitops/applications/ad54321-westport?agentId=prodcluster
+      title: ArgoCD/Harness
+      icon: cloud
+  tags:
+    - golang
+spec:
+  type: service
+  lifecycle: experimental
+  owner: "tylerhatton"
